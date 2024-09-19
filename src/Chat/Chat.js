@@ -8,10 +8,13 @@ import {
   MoreVert,
   SearchOutlined,
 } from "@material-ui/icons";
+import { useParams } from "react-router-dom";
 
 function Chat() {
   let [seed, setSeed] = useState("");
   let [input, setInput] = useState("");
+  let { roomId } = useParams();
+  // console.log(roomId);
 
   useEffect(() => {
     setSeed(Math.floor(Math.random() * 500));
