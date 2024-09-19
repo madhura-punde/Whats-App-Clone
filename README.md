@@ -1,4 +1,16 @@
 # Getting Started with Create React App
+-https://github.com/google/blockly
+-https://github.com/firebase/firebase-js-sdk?tab=coc-ov-file
+-https://github.com/tensorflow/tfjs
+-https://github.com/probot/probot
+
+mern stack
+https://github.com/bradtraversy/mern-tutorial
+https://github.com/gitdagray/mern_stack_course/tree/main/lesson_02
+https://www.youtube.com/@DaveGrayTeachesCode/playlists
+
+https://www.youtube.com/watch?v=4TtAGhr61VI
+
 
 React
 Firebase Firestore RealTime db
@@ -37,6 +49,7 @@ had not imported app and store
 FirebaseError: Firebase: Need to provide options, when not being deployed to hosting via source. (app/no-options).
 
 <!-- 2.07.15 -->
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
