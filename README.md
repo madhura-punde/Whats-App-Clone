@@ -1,20 +1,22 @@
 # Whats App Clone with React and Firebase
 
-## stack used
+### stack used
 
 - React and Material UI
 - React context API
 - Firebase Firestore
 - Google Auth in Firebase
 - Random avatar- Dicebar API used
-  
-  https://www.dicebear.com/introduction/
-  https://www.dicebear.com/how-to-use/http-api/
-  https://api.dicebear.com/7.x/avataaars/svg?seed=${seed}
+  * https://www.dicebear.com/introduction/
+  * https://www.dicebear.com/how-to-use/http-api/
+  * https://api.dicebear.com/7.x/avataaars/svg?seed=${seed}
 
-npm i @material-ui/core
-npm i @material-ui/icons
-npm i firebase-tool
+* packages
+  
+- npm i @material-ui/core
+- npm i @material-ui/icons
+- npm i firebase-tool
+
 
 ### More about Firestore
 
