@@ -6,7 +6,19 @@ import db from "../firebaseSetup";
 
 function SidebarChat({ addNewChat, name, id }) {
   let [seed, setSeed] = useState("");
-  // console.log(name, id);
+  let [msg, setMsg] = useState("");
+
+  useEffect(() => {
+    if (id) {
+      db.collection("room names")
+        .doc(id)
+        .collection("messages")
+        .orderBy("timestamp", "desc")
+        .onSnapshot((snapshot) =>
+          setMsg(snapshot.docs.map((doc) => doc.data()))
+        );
+    }
+  }, [id]);
 
   useEffect(() => {
     setSeed(Math.floor(Math.random() * 500));
@@ -15,7 +27,7 @@ function SidebarChat({ addNewChat, name, id }) {
   const createChat = () => {
     const roomName = prompt("Please enter name for chat room");
     if (roomName) {
-      //save in db..and do other activities
+      //save in db..and do other activitiess
       db.collection("room names").add({
         name: roomName,
       });
@@ -30,7 +42,10 @@ function SidebarChat({ addNewChat, name, id }) {
         />
         <div className="sidebarChat_info">
           <h3>{name}</h3>
-          <p>last message..</p>
+          <p>
+            {/* last message.. */}
+            {msg[0]?.message ? msg[0].message : ""}
+          </p>
         </div>
       </div>
     </Link>
